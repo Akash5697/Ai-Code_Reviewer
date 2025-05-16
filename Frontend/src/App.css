@@ -150,3 +150,101 @@ main .right {
   line-height: 1.6;
   font-size: 1rem;
 }
+
+/* Media Queries for Responsive Design */
+
+/* Large screens (laptops/desktops) */
+@media screen and (max-width: 1200px) {
+  .app-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 992px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .app-header p {
+    font-size: 1rem;
+  }
+  
+  main {
+    padding: 0.8rem;
+    gap: 0.8rem;
+  }
+  
+  .right p, .right pre {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small screens (tablets/large phones) */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: auto;
+    min-height: calc(100% - 120px);
+  }
+  
+  main .left,
+  main .right {
+    flex-basis: auto;
+  }
+  
+  main .left {
+    height: 400px;
+  }
+  
+  main .right {
+    height: auto;
+    min-height: 300px;
+    padding: 1rem;
+  }
+  
+  .app-header {
+    padding: 1rem;
+  }
+  
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Extra small screens (phones) */
+@media screen and (max-width: 480px) {
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .app-header p {
+    font-size: 0.9rem;
+  }
+  
+  main {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+  
+  main .left {
+    height: 350px;
+  }
+  
+  main .left .review {
+    padding: 0.4rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .right pre {
+    padding: 0.8rem;
+  }
+  
+  .right p {
+    font-size: 0.9rem;
+  }
+}
